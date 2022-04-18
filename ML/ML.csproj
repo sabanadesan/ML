@@ -15,4 +15,9 @@
       <HintPath>..\..\ML.Yuk\ML.Yuk\bin\Debug\net6.0\ML.Yuk.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <None Update="data\iris.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
