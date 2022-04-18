@@ -23,7 +23,7 @@ namespace ML
             NDArray data = new NDArray(typeof(double), typeof(double), typeof(double), typeof(double), typeof(string));
             NDArray cols = new NDArray("sepal_length", "sepal_width", "petal_length", "petal_width", "class");
 
-            DataFrame df = DataFrame.LoadCsv(path, ',', false, cols, data, false);
+            DataFrame df = DataFrame.LoadCsv(path, ',', false, cols, data);
         }
 
         public static String GetPath(String symbol, String csvDir)
