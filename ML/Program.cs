@@ -1,6 +1,6 @@
 ﻿using ML;
 
-KNN.Test1();
-KNN.Test2();
+KNNApp.Test1();
+KNNApp.Test2();
 
 

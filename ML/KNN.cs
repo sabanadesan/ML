@@ -3,7 +3,7 @@ using ML.Yuk;
 
 namespace ML
 {
-	public class KNN
+	public class KNNApp
 	{
 		public static void Test1()
         {
@@ -12,7 +12,7 @@ namespace ML
 
 			Labelled data = new Labelled(new Labels(v1, "Flower"), new Labels(v2, "Plant"));
 
-			string l = Model.KNNClassify(5, data, new Vector(5, 5, 5));
+			string l = KNN.Classify(5, data, new Vector(5, 5, 5));
 
 			Console.WriteLine(l);
 		}
@@ -58,7 +58,7 @@ namespace ML
                 Vector v = new Vector(d.AsType<dynamic>());
                 dynamic label = y_test[0, i];
 
-                string p = Model.KNNClassify(5, l, v);
+                string p = KNN.Classify(5, l, v);
 
                 if (p.Equals(label))
                 {
