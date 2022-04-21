@@ -52,7 +52,7 @@ namespace ML
 
             int w = 0;
 
-            for (int i = 0; i < y_train[0].Length; i++)
+            for (int i = 0; i < x_test[0].Length; i++)
             {
                 NDArray d = Model.GetRow(x_test, i);
                 Vector v = new Vector(d.AsType<dynamic>());
@@ -66,7 +66,7 @@ namespace ML
                 }
             }
 
-            int t = x_train[0].Length;
+            int t = x_test[0].Length;
 
             System.Console.WriteLine((double) w/t);
         }
